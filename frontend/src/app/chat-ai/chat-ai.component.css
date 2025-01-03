@@ -1,0 +1,14 @@
+.sub-font-style {
+    color: rgb(32, 40, 47);
+}
+
+#responseBox {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  #searchInput {
+    transition: transform 0.3s ease, margin-bottom 0.3s ease;
+  }
+  

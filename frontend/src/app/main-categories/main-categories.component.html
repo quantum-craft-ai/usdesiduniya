@@ -1,0 +1,507 @@
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+<div class="text-900 font-medium text-4xl mb-4">Social</div>
+<div class="surface-section">
+    <div class="grid -mt-3 -ml-3 -mr-3">
+        <div class="col-12 md:col-6 lg:col-4 xl:col-2 border-bottom-1 surface-border md:border-bottom-none">
+            <div class="p-2">
+                <img src="assets/images/product-list-3-1.png" class="w-full mb-3" />
+                <div class="text-900 text-xl font-medium mb-2">$140.00</div>
+                <div class="mb-2">
+                    <span class="text-600 line-through">$175.00</span>
+                    <span class="ml-2 text-pink-500 font-medium">%25</span>
+                </div>
+                <span class="text-900">Product Name</span>
+            </div>
+        </div>
+        
+        <div class="col-12 md:col-6 lg:col-4 xl:col-2 border-bottom-1 surface-border md:border-bottom-none">
+            <div class="p-2">
+                <img src="assets/images/image.png" class="w-full mb-3" />
+                <div class="text-900 text-xl font-medium mb-2">$100.00</div>
+                <div class="mb-2">
+                    <span class="text-600 line-through">$150.00</span>
+                    <span class="ml-2 text-pink-500 font-medium">%50</span>
+                </div>
+                <span class="text-900">Product Name</span>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 xl:col-2 border-bottom-1 surface-border md:border-bottom-none">
+            <div class="p-2">
+                <img src="assets/images/image copy.png" class="w-full mb-3" />
+                <div class="text-900 text-xl font-medium mb-2">$90.00</div>
+                <div class="mb-2">
+                    <span class="text-600 line-through">$103.00</span>
+                    <span class="ml-2 text-pink-500 font-medium">%15</span>
+                </div>
+                <span class="text-900">Product Name</span>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 xl:col-2 border-bottom-1 surface-border md:border-bottom-none">
+            <div class="p-2">
+                <img src="assets/images/tajmahal.png" class="w-full mb-3" />
+                <div class="text-900 text-xl font-medium mb-2">$50.00</div>
+                <div class="mb-2">
+                    <span class="text-600 line-through">$57.00</span>
+                    <span class="ml-2 text-pink-500 font-medium">%15</span>
+                </div>
+                <span class="text-900">Product Name</span>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 xl:col-2 border-bottom-1 surface-border md:border-bottom-none">
+            <div class="p-2">
+                <img src="assets/images/image copy 3.png" class="w-full mb-3" />
+                <div class="text-900 text-xl font-medium mb-2">$42.00</div>
+                <div class="mb-2">
+                    <span class="text-600 line-through">$54.00</span>
+                    <span class="ml-2 text-pink-500 font-medium">%30</span>
+                </div>
+                <span class="text-900">Product Name</span>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 xl:col-2">
+            <div class="p-2">
+                <img src="assets/images/tajmahal.png" class="w-full mb-3" />
+                <div class="text-900 text-xl font-medium mb-2">$25.00</div>
+                <div class="mb-2">
+                    <span class="text-600 line-through">$50.00</span>
+                    <span class="ml-2 text-pink-500 font-medium">%50</span>
+                </div>
+                <span class="text-900">Product Name</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!------------------------------------Accommodation--------------------------------------------->
+<div class="card">
+    <p-carousel [value]="products" [numVisible]="4" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" autoplayInterval="3000">
+      <ng-template let-product #item>
+          <div class="border border-surface-200 dark:border-surface-700 rounded m-2 p-4">
+              <div class="mb-4">
+                  <div class="relative mx-auto">
+                      <img src="assets/images/tajmahal.png" [alt]="product.name" class="w-full rounded-border" />
+                      <!-- <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)" class="absolute" styleClass="dark:!bg-surface-900" [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" /> -->
+                  </div>
+              </div>
+              <div class="mb-4 font-medium">{{ product.name }}</div>
+              <div class="flex justify-between items-center">
+                  <div class="mt-0 font-semibold text-xl">{{ '$' + product.price }}</div>
+              </div>
+          </div>
+      </ng-template>
+  </p-carousel>
+</div>
+<!------------------------------------Real Estate--------------------------------------------->
+<div class="surface-ground px-4 md:px-6 lg:px-8">
+    <div class="text-900 font-medium text-4xl mb-4">Real Estate</div>
+    <div class="grid -mt-3 -ml-3 -mr-3">
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/tajmahal.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$140.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/image.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$82.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/blocks/ecommerce/productlist/product-list-4-3.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$54.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------Food--------------------------------------------->
+<div class="surface-ground px-4 md:px-6 lg:px-8">
+    <div class="text-900 font-medium text-4xl mb-4">Food</div>
+    <div class="grid -mt-3 -ml-3 -mr-3">
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/tajmahal.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$140.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/image.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$82.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/blocks/ecommerce/productlist/product-list-4-3.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$54.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------Health--------------------------------------------->
+<div class="surface-ground px-4 md:px-6 lg:px-8">
+    <div class="text-900 font-medium text-4xl mb-4">Health</div>
+    <div class="grid -mt-3 -ml-3 -mr-3">
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/tajmahal.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$140.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/image.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$82.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/blocks/ecommerce/productlist/product-list-4-3.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$54.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------Finance--------------------------------------------->
+<div class="surface-ground px-4 md:px-6 lg:px-8">
+    <div class="text-900 font-medium text-4xl mb-4">Finance</div>
+    <div class="grid -mt-3 -ml-3 -mr-3">
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/tajmahal.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$140.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/image.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$82.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/blocks/ecommerce/productlist/product-list-4-3.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$54.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------Immigration--------------------------------------------->
+<div class="surface-ground px-4 md:px-6 lg:px-8">
+    <div class="text-900 font-medium text-4xl mb-4">Immigration</div>
+    <div class="grid -mt-3 -ml-3 -mr-3">
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/tajmahal.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$140.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/image.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$82.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/blocks/ecommerce/productlist/product-list-4-3.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$54.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------Education--------------------------------------------->
+<div class="surface-ground px-4 md:px-6 lg:px-8">
+    <div class="text-900 font-medium text-4xl mb-4">Education</div>
+    <div class="grid -mt-3 -ml-3 -mr-3">
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/tajmahal.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$140.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/image.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$82.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+            <div class="p-2">
+                <div class="shadow-2 p-4 surface-card border-round">
+                    <div class="relative mb-3">
+                        <span class="surface-card text-900 shadow-2 px-3 py-2 absolute" style="border-radius: 1.5rem; left: 1rem; top: 1rem">Category</span>
+                        <img src="assets/images/blocks/ecommerce/productlist/product-list-4-3.png" class="w-full" />
+                    </div>
+                    <div class="flex justify-content-between align-items-center mb-3">
+                        <span class="text-900 font-medium text-xl">Product Name</span>
+                        <span>
+                            <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                            <span class="font-medium">5.0</span>
+                        </span>
+                    </div>
+                    <p class="mt-0 mb-3 text-600 line-height-3">
+                        Enim nec dui nunc mattis enim ut tellus. Tincidunt arcu.
+                    </p>
+                    <span class="text-primary text-xl font-medium">$54.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

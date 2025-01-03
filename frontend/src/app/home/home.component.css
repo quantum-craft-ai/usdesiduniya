@@ -1,0 +1,6 @@
+.image-style {
+   opacity: 0.5; 
+   width: 100%;
+   background-image: url('/src/assets/images/tajmahal.png');
+   background-position: center;
+}
