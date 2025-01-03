@@ -1,59 +1,123 @@
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
-import { Tag } from 'primeng/tag';
-import { ProductService } from '../service/product-service.service';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-main-categories',
-  imports: [CarouselModule, ButtonModule, Tag],
+  imports: [CarouselModule, ButtonModule, CardModule],
   templateUrl: './main-categories.component.html',
-  styleUrl: './main-categories.component.css'
+  styleUrl: './main-categories.component.css',
+  host: { ngSkipHydration: 'true' },
 })
 export class MainCategoriesComponent {
-  products!: any[];
+    products!: any[];
 
-  responsiveOptions: any[] | undefined;
+    responsiveOptions: any[] | undefined;
 
-  constructor(private productService: ProductService) {}
+    constructor() {}
 
-  ngOnInit() {
-      this.productService.getProductsSmall().subscribe((products: any) => {
-          this.products = products;
-      });
+    ngOnInit() {
+        this.products = [{
+            id: '1000',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },{
+            id: '1000',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },{
+            id: '1000',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },{
+            id: '1000',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },{
+            id: '1000',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },{
+            id: '1000',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        },{
+            id: '1000',
+            code: 'f230fh0g3',
+            name: 'Bamboo Watch',
+            description: 'Product Description',
+            image: 'bamboo-watch.jpg',
+            price: 65,
+            category: 'Accessories',
+            quantity: 24,
+            inventoryStatus: 'INSTOCK',
+            rating: 5
+        }];
 
-      this.responsiveOptions = [
-          {
-              breakpoint: '1400px',
-              numVisible: 5,
-              numScroll: 4
-          },
-          {
-              breakpoint: '1199px',
-              numVisible: 4,
-              numScroll: 1
-          },
-          {
-              breakpoint: '767px',
-              numVisible: 3,
-              numScroll: 1
-          },
-          {
-              breakpoint: '575px',
-              numVisible: 2,
-              numScroll: 1
-          }
-      ]
-  }
-
-  // getSeverity(status: string) {
-  //     switch (status) {
-  //         case 'INSTOCK':
-  //             return 'success';
-  //         case 'LOWSTOCK':
-  //             return 'warn';
-  //         case 'OUTOFSTOCK':
-  //             return 'danger';
-  //     }
-  // }
+        this.responsiveOptions = [
+            {
+                breakpoint: '1400px',
+                numVisible: 3,
+                numScroll: 1
+            },
+            {
+                breakpoint: '1199px',
+                numVisible: 4,
+                numScroll: 1
+            },
+            {
+                breakpoint: '767px',
+                numVisible: 3,
+                numScroll: 1
+            },
+            {
+                breakpoint: '575px',
+                numVisible: 2,
+                numScroll: 1
+            }
+        ]
+    }
 }

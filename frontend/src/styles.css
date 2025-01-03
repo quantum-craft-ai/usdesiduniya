@@ -1,3 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'primeflex/themes/primeone-light.css';
 @import "primeflex/primeflex.css";
-@import "primeicons/primeicons.css";
+@import "primeicons/primeicons.css"; 
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+  }
+
+body {
+    font-family: Montserrat;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 
+
