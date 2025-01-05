@@ -1,0 +1,105 @@
+<div *ngIf="visible" class="flex pt-8 pl-3 pr-2">
+    <p-button (click)="visible = false" icon="pi pi-bars" />
+</div> 
+<div *ngIf="!visible" class="flex">
+    <div id="app-sidebar-11" class="flex surface-section h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:200px">  
+        <div class="flex flex-column h-full pt-7"> 
+            <div class="overflow-y-auto">
+                <ul class="list-none p-0 m-0">
+                    <li>
+                        <ul class="list-none p-0 m-0 overflow-hidden">
+                            <li>
+                                <a pRipple routerLink="/" class="flex align-items-center no-underline cursor-pointer p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors text-indigo-500" style="border-radius: 12px">
+                                    <i class="pi pi-home mr-2"></i>
+                                    <span class="font-medium">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a pRipple class="flex align-items-center no-underline p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px">
+                                    <!-- <i class="pi pi-hashtag mr-2"></i> 
+                                    [routerLink]="['/social']"-->
+                                    <i class="pi pi-lock mr-2"></i>
+                                    <span class="font-medium text-gray-500">Social</span>
+                                    <!-- <span class="text-red-300 pl-2" style="font-size: 12px; font-weight: 700;">coming soon</span> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a pRipple [routerLink]="['/accommodation']" class="flex align-items-center no-underline cursor-pointer p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px">
+                                    <i class="pi pi-building mr-2 text-blue-500"></i>
+                                    <span class="font-medium">Accommodation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a pRipple class="flex align-items-center no-underline p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px"
+                                     enterFromClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+                                    <!-- <i class="pi pi-building-columns mr-2 text-purple-500"></i> 
+                                    [routerLink]="['/realestate']" -->
+                                    <i class="pi pi-lock mr-2"></i>
+                                    <span class="font-medium text-gray-500">Real Estate</span>
+                                    <!-- <span class="text-red-300 pl-2" style="font-size: 12px; font-weight: 700;">coming soon</span> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a pRipple class="flex align-items-center no-underline p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px">
+                                    <!-- <i class="pi pi-crown mr-2 text-green-500"></i> 
+                                     [routerLink]="['/food']"-->
+                                     <i class="pi pi-lock mr-2"></i>
+                                    <span class="font-medium text-gray-500">Food</span>
+                                    <!-- <span class="text-red-300 pl-2" style="font-size: 12px; font-weight: 700;">coming soon</span> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a pRipple class="flex align-items-center no-underline p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px">
+                                    <!-- <i class="pi pi-briefcase mr-2 text-cyan-500 "></i> 
+                                    [routerLink]="['/finance']" -->
+                                    <i class="pi pi-lock mr-2"></i>
+                                    <span class="font-medium text-gray-500">Finance</span>
+                                    <!-- <span class="text-red-300 pl-2" style="font-size: 12px; font-weight: 700;">coming soon</span> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a pRipple class="flex align-items-center no-underline p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px">
+                                    <!-- <i class="pi pi-graduation-cap mr-2 text-pink-500 "></i> 
+                                     [routerLink]="['/learn']"-->
+                                    <i class="pi pi-lock mr-2"></i>
+                                    <span class="font-medium text-gray-500">Learn</span>
+                                    <!-- <span class="text-red-300 pl-2" style="font-size: 12px; font-weight: 700;">coming soon</span> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a pRipple class="flex align-items-center no-underline p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px">
+                                    <!-- <i class="pi pi-heart mr-2 text-teal-500 "></i>
+                                    [routerLink]="['/health']" -->
+                                    <i class="pi pi-lock mr-2"></i>
+                                    <span class="font-medium text-gray-500">Health</span>
+                                    <!-- <span class="text-red-300 pl-2" style="font-size: 12px; font-weight: 700;">coming soon</span> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a pRipple class="flex align-items-center no-underline p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px">
+                                    <!-- <i class="pi pi-car mr-2 text-pink-500 "></i>
+                                    [routerLink]="['/travel']" -->
+                                    <i class="pi pi-lock mr-2"></i>
+                                    <span class="font-medium text-gray-500">Travel</span>
+                                    <!-- <span class="text-red-300 pl-2" style="font-size: 12px; font-weight: 700;">coming soon</span> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a pRipple class="flex align-items-center no-underline p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px">
+                                    <!-- <i class="pi pi-globe mr-2 text-pink-500 "></i>
+                                    [routerLink]="['/fashion']"  -->
+                                    <i class="pi pi-lock mr-2"></i>
+                                    <span class="font-medium text-gray-500">Fashion</span>
+                                    <!-- <span class="text-red-300 pl-2" style="font-size: 12px; font-weight: 700;">coming soon</span> -->
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="flex pt-6 z-2 cursor-pointer" style="transform: translateX(-30px);">
+        <i (click)="visible = true" class="pi pi-arrow-circle-left text-purple-800 z-5 pt-2 text-2xl"></i>
+    </div>
+</div>

@@ -1,8 +1,19 @@
-<div class="grid">
-    <div class="col-12">
-        <app-chat-ai></app-chat-ai>
-    </div>
-    <div class="col-12">
-        <app-main-categories></app-main-categories>
+<div class="min-h-screen flex surface-ground">
+    
+    <app-left-nav></app-left-nav>
+    
+    <div class="min-h-screen flex flex-column relative flex-auto">
+        <div class="pt-6 flex flex-column flex-auto">
+            <div class="surface-border border-round surface-section flex-auto">
+                <div class="grid">
+                    <div class="col-12">
+                        <app-chat-ai></app-chat-ai>
+                    </div>
+                    <div class="col-12">
+                        <app-main-categories></app-main-categories>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

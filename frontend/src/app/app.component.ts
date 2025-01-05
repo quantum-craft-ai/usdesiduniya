@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { StyleClassModule } from 'primeng/styleclass';
@@ -7,7 +7,8 @@ import { StyleClassModule } from 'primeng/styleclass';
   selector: 'app-root',
   imports: [RouterOutlet, FooterComponent, StyleClassModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  encapsulation: ViewEncapsulation.None 
 })
 export class AppComponent {
   title = 'frontend';

@@ -4,13 +4,14 @@ import { MainCategoriesComponent } from "../main-categories/main-categories.comp
 import { StyleClassModule } from 'primeng/styleclass';
 import { MenuModule } from 'primeng/menu';
 import { CardModule } from 'primeng/card'
+import { LeftNavComponent } from "../left-nav/left-nav.component";
 
 @Component({
   selector: 'app-home',
-  imports: [ChatAiComponent, MainCategoriesComponent, StyleClassModule, MenuModule, CardModule],
+  imports: [ChatAiComponent, MainCategoriesComponent, StyleClassModule, MenuModule, CardModule, LeftNavComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  visible4: boolean = false;
 }
