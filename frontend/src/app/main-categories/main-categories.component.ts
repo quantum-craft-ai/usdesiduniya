@@ -2,10 +2,14 @@ import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { DataViewModule } from 'primeng/dataview';
+import { TagModule } from 'primeng/tag';
+import { CommonModule } from '@angular/common';
+import { CheckboxModule } from 'primeng/checkbox';
 
 @Component({
   selector: 'app-main-categories',
-  imports: [CarouselModule, ButtonModule, CardModule],
+  imports: [CarouselModule, ButtonModule, CardModule, DataViewModule, TagModule, CommonModule, CheckboxModule],
   templateUrl: './main-categories.component.html',
   styleUrl: './main-categories.component.css',
   host: { ngSkipHydration: 'true' },
