@@ -1,9 +1,13 @@
 <div class="bg-indigo-900 z-5 w-12 fixed" style="height: 50px;">
     <object data="assets/images/logo/usdesi-white.svg" width="200" height="100" style="transform: translateY(-55px);"> </object>
 </div>
-<div class="surface-ground pb-3">
+<div class="surface-ground pb-3" style="min-height: 100vh; ">
     <router-outlet></router-outlet>
+    <div class="card p-4" style="position: fixed; bottom: 1rem; right: 1rem; z-index: 999;">  
+        <p-speeddial [model]="items" direction="up" mask />  
+    </div>
 </div>
+
 <footer style="margin-top: auto;">
     <app-footer></app-footer>
 </footer>
