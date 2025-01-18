@@ -14,7 +14,10 @@ const serverConfig: ApplicationConfig = {
     provideAnimationsAsync(),
     providePrimeNG({
       theme: {
-          preset: Aura
+          preset: Aura,
+          options: {
+            darkModeSelector: false || 'none'
+          }
       }
   })
   ]
