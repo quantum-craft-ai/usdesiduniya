@@ -41,10 +41,8 @@ import { AccFormsComponent } from "../acc-forms/acc-forms.component";
     SearchBarComponent, 
     LeftNavComponent,
     HttpClientModule,
-    
+    AccFormsComponent,
   ],
-    CardModule, SearchBarComponent, LeftNavComponent,
-    HttpClientModule, AccFormsComponent],
   templateUrl: './acc-home-page.component.html',
   styleUrl: './acc-home-page.component.css',
   providers: [AddPostService]
