@@ -4,4 +4,5 @@ dependencies
 python
 .http
 .env
-aws_lambda_artifact.zip
+environments
+artifact
