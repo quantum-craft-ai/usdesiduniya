@@ -30,3 +30,14 @@ html, body {
 /* .bg-violet-custyle {
     background-color: #651fff;
 } */
+
+.logo-style {
+    transform: translateY(-55px);
+    /* @media screen and (max-width: 900px) { 
+        transform: translate(200px, -55px) !important;
+    } */
+}
+
+.bg-primary-aura {
+    background-color: var(--p-primary-800);
+}

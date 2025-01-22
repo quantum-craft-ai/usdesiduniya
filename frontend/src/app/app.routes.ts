@@ -9,6 +9,7 @@ import { LearnHomeComponent } from './learn/learn-home/learn-home.component';
 import { HealthHomeComponent } from './health/health-home/health-home.component';
 import { TravelHomeComponent } from './travel/travel-home/travel-home.component';
 import { FashionHomeComponent } from './fashion/fashion-home/fashion-home.component';
+import { FormComponent } from './form/form.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -21,4 +22,5 @@ export const routes: Routes = [
     { path: 'health', component: HealthHomeComponent},
     { path: 'travel', component: TravelHomeComponent},
     { path: 'fashion', component: FashionHomeComponent},
+    { path: 'ad-post', component: FormComponent},
 ];

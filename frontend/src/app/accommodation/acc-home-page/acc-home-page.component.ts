@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
@@ -19,11 +18,10 @@ import { LeftNavComponent } from "../../left-nav/left-nav.component";
 import { AddPostService } from '../../service/add-post.service';
 import { HttpClientModule } from '@angular/common/http';
 import { UDDPost } from '../../model/UDDPost';
-import { AccFormsComponent } from "../acc-forms/acc-forms.component";
 
 @Component({
   selector: 'app-acc-home-page',
-  imports: [RatingModule,
+  imports: [
     FormsModule,
     ButtonModule,
     BadgeModule,
@@ -37,11 +35,11 @@ import { AccFormsComponent } from "../acc-forms/acc-forms.component";
     CommonModule,
     TabMenuModule,
     CheckboxModule,
-    CardModule, 
-    SearchBarComponent, 
+    CardModule,
+    SearchBarComponent,
     LeftNavComponent,
     HttpClientModule,
-    AccFormsComponent,
+    
   ],
   templateUrl: './acc-home-page.component.html',
   styleUrl: './acc-home-page.component.css',

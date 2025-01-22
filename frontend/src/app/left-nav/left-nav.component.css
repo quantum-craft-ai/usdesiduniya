@@ -1,0 +1,9 @@
+:host ::ng-deep .p-drawer-left {
+    width: 10rem;
+}
+
+:host ::ng-deep .p-button {
+    background: white;
+    border-color: white;
+    color: black;
+}

@@ -14,3 +14,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 } 
 
+body {
+  font-family: Montserrat;
+  background: var(--surface-ground);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

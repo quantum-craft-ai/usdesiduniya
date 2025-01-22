@@ -1,13 +1,29 @@
 <div class="min-h-screen flex surface-ground">
-    
-    <app-left-nav></app-left-nav>
-    
     <div class="min-h-screen flex flex-column relative flex-auto">
-        <div class="pt-6 flex flex-column flex-auto">
+        <div class="flex flex-column flex-auto">
             <div class="surface-border border-round surface-section flex-auto">
                 <div class="grid">
                     <div class="col-12 p-0">
-                        <app-chat-ai></app-chat-ai>
+                        <!-- https://unsplash.com/photos/people-near-taj-mahal-eU4pipU_8HA -->
+                        <div class="relative py-8 md:pt-3 md:pb-8 overflow-hidden bg-no-repeat bg-cover" style="background-image: url('assets/images/tajmahal-window.jpg');">
+                            <div class="text-center md:my-8 md:py-5 xl:my-8 xl:py-8 relative">
+                                <div class="text-2xl sm:text-5xl xl:text-6xl font-bold mb-1 fadeinup animation-duration-1000 animation-iteration-1">Ask anything</div>
+                                <div class="text-2xl sm:text-5xl xl:text-6xl font-bold sub-font-style text-indigo-500 fadeinup animation-duration-1000 animation-iteration-1">To AI Agents</div>
+                                <div class="card flex justify-content-center pt-5">
+                                    <p-inputgroup class="w-5 md:!w-[30rem]">
+                                        <!-- <p-inputgroup-addon>
+                                            <i class="pi pi-star-fill"></i>
+                                        </p-inputgroup-addon> -->
+                                        <input type="text" pInputText placeholder="Price" />
+                                        <p-inputgroup-addon>$</p-inputgroup-addon>
+                                    </p-inputgroup>
+                                </div>
+                                <!-- <div class="flex align-items-center justify-content-center flex-wrap"> -->
+                                    <!-- <input type="text" class="border-gray-600 border-solid p-3 mt-3 w-8 md:w-6 lg:w-4" style="border-radius: 15px; text-indent: 5px;" placeholder="Enter your promt here" > -->
+                                    <!-- <i class="pi pi-arrow-right cursor-pointer pt-3 pr-3 -translate-x-100"></i> -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 p-0">
                         <app-main-categories></app-main-categories>
